@@ -1,0 +1,14 @@
+name: Send Payload to Deployment Register
+description: Sends deployment info payload to sre register tool 
+runs:
+  using: 'python'
+  main: 'actions/register/register.py'
+inputs:
+  app-endpoint:
+    description: 'The endpoint to send the payload to'
+    required: true
+  app-name:
+    description: 'Deployment Register'
+    required: true
+outputs:
+  none
